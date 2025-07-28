@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brio Pickleball Club – Indoor Pickleball in Yaphank</title>
+    <!-- Tailwind CSS v4 via Play CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Custom Tailwind theme variables -->
+    <style type="text/tailwindcss">
+      @theme {
+        /* Pick colors inspired by our logo */
+        --color-primary: #0c4a6e; /* navy/teal */
+        --color-accent: #34d399;  /* lime green */
+      }
+      @layer utilities {
+        .bg-primary { background-color: var(--color-primary); }
+        .text-primary { color: var(--color-primary); }
+        .bg-accent { background-color: var(--color-accent); }
+        .text-accent { color: var(--color-accent); }
+      }
+    </style>
+  </head>
+  <body class="antialiased text-gray-800">
+    <!-- Navigation bar -->
+    <header class="bg-white shadow-sm fixed w-full z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center space-x-3">
+            <img src="logo.png" alt="Brio Pickleball Club logo" class="h-10 w-10" />
+            <span class="font-semibold text-xl text-primary">Brio Pickleball Club</span>
+          </div>
+          <nav class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="#about" class="text-gray-600 hover:text-primary transition">About</a>
+            <a href="#features" class="text-gray-600 hover:text-primary transition">Features</a>
+            <a href="#membership" class="text-gray-600 hover:text-primary transition">Membership</a>
+            <a href="#team" class="text-gray-600 hover:text-primary transition">Team</a>
+            <a href="#contact" class="text-gray-600 hover:text-primary transition">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero section -->
+    <section id="home" class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+      <img src="hero.png" alt="Indoor pickleball facility" class="absolute inset-0 w-full h-full object-cover object-center" />
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 max-w-2xl mx-auto px-4">
+        <img src="logo.png" alt="Brio Pickleball Club logo" class="mx-auto mb-6 w-28 md:w-32" />
+        <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-md mb-4">Play. Connect. Thrive.</h1>
+        <p class="text-lg md:text-xl text-gray-100 mb-8">Year‑round indoor pickleball at The Boulevard in Yaphank, NY.</p>
+        <a href="#membership" class="inline-block px-8 py-3 bg-accent text-black font-semibold rounded-full shadow-md hover:bg-green-400 transition">Join Now</a>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Mission</h2>
+          <p class="text-gray-600 text-lg leading-relaxed">Brio Pickleball Club is more than a place to play—it's a community.  We bring people of all ages together to stay active, connect and thrive.  Located at The Boulevard at The Brio in Yaphank, we offer a high‑quality, climate‑controlled facility with six professional courts, comfortable lounge spaces and programs for every skill level.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Stat card 1 -->
+          <div class="p-6 bg-white shadow-lg rounded-lg">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-accent/20 mb-4">
+              <!-- Icon: Community -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-accent">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a2 2 0 00-2-2h-3v4zM6 6a2 2 0 00-2 2v12h5v-2a2 2 0 012-2h3V8a2 2 0 00-2-2H6z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 text-primary">Community‑Focused</h3>
+            <p class="text-gray-600 text-sm">Our club fosters friendships and social connections through leagues, mixers and events.</p>
+          </div>
+          <!-- Stat card 2 -->
+          <div class="p-6 bg-white shadow-lg rounded-lg">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-accent/20 mb-4">
+              <!-- Icon: Court -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-accent">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5h18M3 9h18m-2 2v8a2 2 0 01-2 2H7a2 2 0 01-2-2v-8m12 0v-4H7v4m12 0H5" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 text-primary">Pro‑Quality Courts</h3>
+            <p class="text-gray-600 text-sm">Six regulation indoor courts with cushioned surfaces, LED lighting and ample space.</p>
+          </div>
+          <!-- Stat card 3 -->
+          <div class="p-6 bg-white shadow-lg rounded-lg">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-accent/20 mb-4">
+              <!-- Icon: Program -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-accent">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v12m6-6H6" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 text-primary">Programs for All</h3>
+            <p class="text-gray-600 text-sm">Beginner clinics, youth camps, private lessons, leagues and tournaments ensure everyone has a place on the court.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features section -->
+    <section id="features" class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-primary mb-3">Why Choose Brio Pickleball Club?</h2>
+          <p class="text-gray-600 text-lg">Discover the benefits of joining our premier indoor pickleball community.</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Feature card 1 -->
+          <div class="p-6 bg-gray-50 rounded-lg shadow-md text-center">
+            <div class="flex items-center justify-center h-12 w-12 mx-auto rounded-full bg-accent/20 mb-4">
+              <!-- Icon: Weather -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-accent">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15a4 4 0 014-4h1a4 4 0 017.878-.912A5 5 0 1118 16H7a4 4 0 01-4-1z" />
+              </svg>
+            </div>
+            <h4 class="text-lg font-semibold text-primary mb-2">Climate‑Controlled</h4>
+            <p class="text-gray-600 text-sm">Play comfortably year‑round regardless of weather.  Our HVAC system maintains optimal temperature and air quality.</p>
+          </div>
+          <!-- Feature card 2 -->
+          <div class="p-6 bg-gray-50 rounded-lg shadow-md text-center">
+            <div class="flex items-center justify-center h-12 w-12 mx-auto rounded-full bg-accent/20 mb-4">
+              <!-- Icon: Lounge -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-accent">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 15a2 2 0 002 2h10a2 2 0 002-2M4 7h16v8H4V7z" />
+              </svg>
+            </div>
+            <h4 class="text-lg font-semibold text-primary mb-2">Lounge & Café</h4>
+            <p class="text-gray-600 text-sm">Relax between matches in our stylish lounge, enjoy healthy snacks and watch the action on big‑screen TVs.</p>
+          </div>
+          <!-- Feature card 3 -->
+          <div class="p-6 bg-gray-50 rounded-lg shadow-md text-center">
+            <div class="flex items-center justify-center h-12 w-12 mx-auto rounded-full bg-accent/20 mb-4">
+              <!-- Icon: Lesson -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-accent">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l9-5-9-5-9 5 9 5z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l6.16-3.422a12.083 12.083 0 010 6.844L12 14z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l-6.16-3.422a12.083 12.083 0 000 6.844L12 14z" />
+              </svg>
+            </div>
+            <h4 class="text-lg font-semibold text-primary mb-2">Expert Coaching</h4>
+            <p class="text-gray-600 text-sm">Certified instructors provide clinics, lessons and skill‑building programs for players at every level.</p>
+          </div>
+          <!-- Feature card 4 -->
+          <div class="p-6 bg-gray-50 rounded-lg shadow-md text-center">
+            <div class="flex items-center justify-center h-12 w-12 mx-auto rounded-full bg-accent/20 mb-4">
+              <!-- Icon: Event -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-accent">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10m-10 4h10M5 5h14a2 2 0 012 2v13a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z" />
+              </svg>
+            </div>
+            <h4 class="text-lg font-semibold text-primary mb-2">Social Events</h4>
+            <p class="text-gray-600 text-sm">Weekly leagues, themed mixers, tournaments and corporate outings keep our calendar exciting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Membership section -->
+    <section id="membership" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-primary mb-3">Membership & Pricing</h2>
+          <p class="text-gray-600 text-lg">Flexible options to fit your lifestyle—play casually or become a devoted member.</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Plan card 1 -->
+          <div class="p-8 bg-white rounded-lg shadow-lg text-center flex flex-col">
+            <h3 class="text-xl font-semibold text-primary mb-4">Drop‑In</h3>
+            <p class="text-gray-600 mb-6">Perfect for the occasional player. Pay as you go and enjoy any available court.</p>
+            <div class="mb-6">
+              <span class="text-3xl font-bold text-primary">$15</span>
+              <span class="text-gray-500 text-sm">/ visit</span>
+            </div>
+            <ul class="flex-1 text-gray-600 space-y-2 mb-8 text-left">
+              <li class="flex items-start"><span class="mr-2 text-accent">•</span>Same‑day booking</li>
+              <li class="flex items-start"><span class="mr-2 text-accent">•</span>Access to lounge & café</li>
+              <li class="flex items-start"><span class="mr-2 text-accent">•</span>Equipment rental available</li>
+            </ul>
+            <a href="#contact" class="inline-block mt-auto px-6 py-3 bg-accent text-black font-semibold rounded-full shadow-md hover:bg-green-400 transition">Get Started</a>
+          </div>
+          <!-- Plan card 2 -->
+          <div class="p-8 bg-primary text-white rounded-lg shadow-lg text-center flex flex-col">
+            <h3 class="text-xl font-semibold mb-4">Monthly Member</h3>
+            <p class="text-blue-100 mb-6">Unlimited play and exclusive perks for our most dedicated members.</p>
+            <div class="mb-6">
+              <span class="text-3xl font-bold">$85</span>
+              <span class="text-gray-200 text-sm">/ month</span>
+            </div>
+            <ul class="flex-1 space-y-2 mb-8 text-left text-blue-100">
+              <li class="flex items-start"><span class="mr-2 text-accent">•</span>Unlimited court reservations</li>
+              <li class="flex items-start"><span class="mr-2 text-accent">•</span>Advance booking privileges</li>
+              <li class="flex items-start"><span class="mr-2 text-accent">•</span>Discounts on lessons & events</li>
+              <li class="flex items-start"><span class="mr-2 text-accent">•</span>Guest passes</li>
+            </ul>
+            <a href="#contact" class="inline-block mt-auto px-6 py-3 bg-accent text-black font-semibold rounded-full shadow-md hover:bg-green-400 transition">Join Today</a>
+          </div>
+          <!-- Plan card 3 -->
+          <div class="p-8 bg-white rounded-lg shadow-lg text-center flex flex-col">
+            <h3 class="text-xl font-semibold text-primary mb-4">Corporate & Group</h3>
+            <p class="text-gray-600 mb-6">Bring your team together with group packages and private events.</p>
+            <div class="mb-6">
+              <span class="text-3xl font-bold text-primary">Custom</span>
+            </div>
+            <ul class="flex-1 text-gray-600 space-y-2 mb-8 text-left">
+              <li class="flex items-start"><span class="mr-2 text-accent">•</span>Dedicated court time</li>
+              <li class="flex items-start"><span class="mr-2 text-accent">•</span>Event planning assistance</li>
+              <li class="flex items-start"><span class="mr-2 text-accent">•</span>Catering & refreshments</li>
+              <li class="flex items-start"><span class="mr-2 text-accent">•</span>Team‑building activities</li>
+            </ul>
+            <a href="#contact" class="inline-block mt-auto px-6 py-3 bg-accent text-black font-semibold rounded-full shadow-md hover:bg-green-400 transition">Inquire</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team section -->
+    <section id="team" class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-primary mb-3">Our Founders</h2>
+          <p class="text-gray-600 text-lg">Meet the talented team behind Brio Pickleball Club.</p>
+        </div>
+        <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-8">
+          <!-- Founder: Phil -->
+          <div class="p-6 bg-gray-50 rounded-lg shadow-md text-center flex flex-col items-center">
+            <!-- Placeholder icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-16 w-16 text-accent mb-4">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M12 14l9-5-9-5-9 5 9 5z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M12 14l6.16-3.422a12.083 12.083 0 010 6.844L12 14z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M12 14l-6.16-3.422a12.083 12.083 0 000 6.844L12 14z" />
+            </svg>
+            <h3 class="text-xl font-semibold text-primary mb-1">Phil</h3>
+            <p class="text-gray-500 mb-2">Marketing & Technology</p>
+            <p class="text-gray-600 text-sm">Phil leads digital marketing, web development, data analytics and our online booking platform.</p>
+          </div>
+          <!-- Founder: Jose -->
+          <div class="p-6 bg-gray-50 rounded-lg shadow-md text-center flex flex-col items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-16 w-16 text-accent mb-4">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M12 8c-3.86 0-7 2.239-7 5v5h14v-5c0-2.761-3.14-5-7-5z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M12 5a2 2 0 110-4 2 2 0 010 4z" />
+            </svg>
+            <h3 class="text-xl font-semibold text-primary mb-1">Jose</h3>
+            <p class="text-gray-500 mb-2">Finance</p>
+            <p class="text-gray-600 text-sm">Jose oversees budgeting, accounting, funding, pricing strategies and tax compliance.</p>
+          </div>
+          <!-- Founder: Jay -->
+          <div class="p-6 bg-gray-50 rounded-lg shadow-md text-center flex flex-col items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-16 w-16 text-accent mb-4">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" />
+            </svg>
+            <h3 class="text-xl font-semibold text-primary mb-1">Jay</h3>
+            <p class="text-gray-500 mb-2">Sales & Culture/Design</p>
+            <p class="text-gray-600 text-sm">Jay manages sales, partnerships and interior design; he cultivates a welcoming culture.</p>
+          </div>
+          <!-- Founder: Ryan -->
+          <div class="p-6 bg-gray-50 rounded-lg shadow-md text-center flex flex-col items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-16 w-16 text-accent mb-4">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M7 12c0 1.105-.895 2-2 2s-2-.895-2-2 .895-2 2-2 2 .895 2 2zM19 7h-1l-2-4H6l-2 4H3" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M3 7l1 13a2 2 0 002 2h12a2 2 0 002-2l1-13" />
+            </svg>
+            <h3 class="text-xl font-semibold text-primary mb-1">Ryan</h3>
+            <p class="text-gray-500 mb-2">People & Facilities</p>
+            <p class="text-gray-600 text-sm">Ryan manages HR and training, community outreach and landscaping information.</p>
+          </div>
+          <!-- Founder: Kenny -->
+          <div class="p-6 bg-gray-50 rounded-lg shadow-md text-center flex flex-col items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-16 w-16 text-accent mb-4">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M5 13l4 4L19 7" />
+            </svg>
+            <h3 class="text-xl font-semibold text-primary mb-1">Kenny</h3>
+            <p class="text-gray-500 mb-2">Insurance & Risk</p>
+            <p class="text-gray-600 text-sm">Kenny handles insurance, risk management, legal compliance and participant waivers.</p>
+          </div>
+          <!-- Founder: Will -->
+          <div class="p-6 bg-gray-50 rounded-lg shadow-md text-center flex flex-col items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-16 w-16 text-accent mb-4">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M12 20l9-5-9-5-9 5 9 5z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M12 4l9 5-9 5-9-5 9-5z" />
+            </svg>
+            <h3 class="text-xl font-semibold text-primary mb-1">Will</h3>
+            <p class="text-gray-500 mb-2">Sports & Operations</p>
+            <p class="text-gray-600 text-sm">Will oversees court maintenance, sports programming, equipment and landscaping materials.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="py-20 bg-primary text-white relative">
+      <div class="absolute inset-0 opacity-20" style="background-image: url('hero.png'); background-size: cover; background-position: center;"></div>
+      <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl md:text-4xl font-bold mb-3">Get In Touch</h2>
+          <p class="text-blue-100 text-lg">We'd love to hear from you!  Whether you have questions, want to join or book an event, reach out anytime.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+          <div class="flex flex-col items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-8 w-8 text-accent mb-2">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5h18M12 7v12m0 0l4-4-4 4-4-4" />
+            </svg>
+            <h4 class="font-semibold mb-1">Address</h4>
+            <p class="text-blue-100">The Boulevard at The Brio<br>Yaphank, NY 11980</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-8 w-8 text-accent mb-2">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5v16h18V5H3zm0 0l9 6 9-6" />
+            </svg>
+            <h4 class="font-semibold mb-1">Email</h4>
+            <p class="text-blue-100"><a href="mailto:info@briopickleballclub.com" class="underline">info@briopickleballclub.com</a></p>
+          </div>
+          <div class="flex flex-col items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-8 w-8 text-accent mb-2">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l4.586 4.586a2 2 0 002.828 0L18 5m3.5 3.5L19 3l-9 9" />
+            </svg>
+            <h4 class="font-semibold mb-1">Phone</h4>
+            <p class="text-blue-100">(631) 555‑PLAY</p>
+          </div>
+        </div>
+        <div class="mt-12 text-center">
+          <a href="#membership" class="inline-block px-8 py-3 bg-accent text-black font-semibold rounded-full shadow-md hover:bg-green-400 transition">Join the Club</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 text-sm py-6">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+        <p>&copy; 2025 Brio Pickleball Club. All rights reserved.</p>
+        <div class="space-x-4">
+          <a href="#" class="hover:text-white">Privacy Policy</a>
+          <a href="#" class="hover:text-white">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop" aria-label="Back to top" class="fixed bottom-6 right-6 p-3 rounded-full bg-accent text-black shadow-lg hover:bg-green-400 transition hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 15l7-7 7 7" />
+      </svg>
+    </button>
+
+    <script>
+      // Show/hide back-to-top button
+      const backToTop = document.getElementById('backToTop');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) {
+          backToTop.classList.remove('hidden');
+        } else {
+          backToTop.classList.add('hidden');
+        }
+      });
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
+  </body>
+</html>
